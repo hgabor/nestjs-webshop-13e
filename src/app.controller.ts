@@ -44,5 +44,11 @@ export class AppController {
 
       return
     }
+
+    response.redirect('/orderSuccess')
   }
+
+  @Get('orderSuccess')
+  @Render('success')
+  orderSuccess() {}
 }

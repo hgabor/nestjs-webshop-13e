@@ -10,20 +10,23 @@
   <form method="post">
     <label>
       <img src="/img/easter_island.jpg" alt=""><br>
-      <input type="radio" name="termek" value="husvet"> Húsvét szigetek
+      <input type="radio" name="termek" value="husvet"
+        <%= data.termek == 'husvet' ? 'checked' : '' %> > Húsvét szigetek
     </label>
     <label>
       <img src="/img/egypt.jpg" alt=""><br>
-      <input type="radio" name="termek" value="egyiptom"> Egyiptom
+      <input type="radio" name="termek" value="egyiptom"
+        <%= data.termek == 'egyiptom' ? 'checked' : '' %> > Egyiptom
     </label>
     <label>
       <img src="/img/fujisan.jpg" alt=""><br>
-      <input type="radio" name="termek" value="japan"> Japán
+      <input type="radio" name="termek" value="japan"
+        <%= data.termek == 'japan' ? 'checked' : '' %> > Japán
     </label>
     <br>
 
-    Név: <input type="text" name="nev"><br>
-    Kuponkód: <input type="text" name="kupon"><br>
+    Név: <input type="text" name="nev" value="<%= data.nev %>"><br>
+    Kuponkód: <input type="text" name="kupon" value="<%= data.kupon %>"><br>
     <h2>Számlázás</h2>
     Ország: <input type="text" name="szaml_orszag"><br>
     Irányítószám: <input type="text" name="szaml_iranyito"><br>

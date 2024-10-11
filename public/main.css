@@ -1,7 +1,12 @@
 label {
   display: inline-block;
+
   img {
     width: 400px;
   }
+}
+
+.alert-danger {
+  background-color: #e2acac;
 }
 

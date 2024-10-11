@@ -39,6 +39,10 @@
     Lejárat: <input type="text" name="lejarat"><br>
     Biztonsági kód: <input type="text" name="biztonsag"><br>
 
+    <% for (let e of errors) { %>
+      <div class="alert alert-danger"><%= e %></div>
+    <% } %>
+
     <input type="submit" value="Vásárol">
 
   </form>

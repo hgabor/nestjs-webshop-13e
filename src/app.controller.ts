@@ -12,4 +12,10 @@ export class AppController {
       message: this.appService.getHello()
     };
   }
+
+  @Get('order')
+  @Render('orderForm')
+  orderForm() {
+    
+  }
 }
